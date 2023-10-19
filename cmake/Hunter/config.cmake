@@ -1,9 +1,9 @@
-hunter_config(
-    nlohmann_json
-    VERSION "3.9.1"
-    URL "https://github.com/nlohmann/json/archive/v3.9.1.tar.gz"
-    SHA1 "f8a20a7e19227906d77de0ede97468fbcfea03e7"
-)
+#hunter_config(
+#    nlohmann_json
+#    VERSION "3.9.1"
+#    URL "https://github.com/nlohmann/json/archive/v3.9.1.tar.gz"
+#    SHA1 "f8a20a7e19227906d77de0ede97468fbcfea03e7"
+#)
 
 hunter_config(
     XLink
@@ -19,17 +19,17 @@ hunter_config(
     VERSION "1.0.8-p0"
 )
 
-hunter_config(
-    spdlog
-    VERSION "1.8.2"
-    URL "https://github.com/gabime/spdlog/archive/v1.8.2.tar.gz"
-    SHA1 "4437f350ca7fa89a0cd8faca1198afb36823f775"
-    CMAKE_ARGS
-        SPDLOG_BUILD_EXAMPLE=OFF
-        SPDLOG_FMT_EXTERNAL=OFF
-        CMAKE_CXX_VISIBILITY_PRESET=hidden
-        CMAKE_C_VISIBILITY_PRESET=hidden
-)
+#hunter_config(
+#    spdlog
+#    VERSION "1.8.2"
+#    URL "https://github.com/gabime/spdlog/archive/v1.8.2.tar.gz"
+#    SHA1 "4437f350ca7fa89a0cd8faca1198afb36823f775"
+#    CMAKE_ARGS
+#        SPDLOG_BUILD_EXAMPLE=OFF
+#        SPDLOG_FMT_EXTERNAL=OFF
+#        CMAKE_CXX_VISIBILITY_PRESET=hidden
+#        CMAKE_C_VISIBILITY_PRESET=hidden
+#)
 
 # libarchive, luxonis fork
 hunter_config(
@@ -98,13 +98,13 @@ hunter_config(
     SHA1 "32f40f084615ba7940ce9d29f05f3294371aabeb"
 )
 
-# Specific Catch2 version
-hunter_config(
-    Catch2
-    VERSION "2.13.7"
-    URL "https://github.com/catchorg/Catch2/archive/refs/tags/v3.2.1.tar.gz"
-    SHA1 "acfba7f71cbbbbf60bc1bc4c0e3efca4a9c70df7"
-)
+## Specific Catch2 version
+#hunter_config(
+#    Catch2
+#    VERSION "2.13.7"
+#    URL "https://github.com/catchorg/Catch2/archive/refs/tags/v3.2.1.tar.gz"
+#    SHA1 "acfba7f71cbbbbf60bc1bc4c0e3efca4a9c70df7"
+#)
 
 # ZLib - Luxonis fix for alias on imported target for old CMake versions
 hunter_config(
